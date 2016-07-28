@@ -532,7 +532,7 @@ minetest.register_chatcommand("mvol", {
 	func = function(name, volume)
 		volume = tonumber(volume)
 		if not volume then
-			minetest.chat_send_player(name, "Music volume is "..volume)
+			minetest.chat_send_player(name, "Music volume is "..MUSICVOLUME)
 			return
 		end
 		MUSICVOLUME = volume
